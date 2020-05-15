@@ -4,7 +4,7 @@
     "description": "projet jardin",
     "main": "index.js",
     "scripts": {
-        "test": "test"
+        "start": "node server/server.js"
     },
     "author": "",
     "license": "ISC",
