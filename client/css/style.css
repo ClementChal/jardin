@@ -1,0 +1,27 @@
+
+
+#banner{
+    height: 10vh;
+    margin-bottom: 2vh;
+
+    align-items: center;
+    justify-content: center;
+}
+
+#bannerContent{
+    font-size: large;
+    padding-top:1vh;
+}
+
+#bannerContent li {
+    margin-left: 2rem;
+}
+
+#bannerContent i {
+    margin-left: 1rem;
+}
+
+.card-content{
+    height : 15vh;
+}
+

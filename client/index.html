@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Compiled and minified CSS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+    <link rel="stylesheet" href="./CSS/weather-icons.min.css" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="nav-wrapper green darken-3 z-depth-5">
+            <a href="#" class="brand-logo center">Info Jardin</a>
+        </div>
+    </nav>
+    <nav id='banner'>
+        <div class="nav-wrapper green" id="bannerContent">
+            <ul id="nav-mobile" class="left">
+                <li> Aujourd'hui : <i id="wiToday"></i></li>
+                <li> Demain : <i id="wiTomorow"></i></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col m12 l6">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="assets/arrosage.jpg">
+                        <span class="card-title black-text bold">Arroseur automatique</span>
+                    </div>
+                    <div class="card-content">
+                        <h6></b>État : <span id="valveState"></span></h6>
+                        <div>
+                            <label>
+                                <input type="checkbox" checked="checked" onclick="toggleAutomatic()" /><!-- je pense pas que ça vienne du front ça renvoyait bien les true false-->
+                                <span>Mode automatique</span>
+                            </label>
+                        </div>
+                        <div class="switch">
+                            <label>
+                                Off
+                                <input type="checkbox" id="onOff" value="false" onclick="toggleOnOff()">
+                                <span class="lever"></span>
+                                On
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col m12 l6">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="assets/humidity-sensor.jpg">
+                        <span class="card-title black-text">Capteur d'humidité</span>
+                    </div>
+                    <div class="card-content">
+                        <h6>Humidité du sol: <span id="sensorValue"></span></h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Compiled and minified JavaScript -->
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js "></script>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+    <script>
+
+    </script>
+</body>
+
+</html>
